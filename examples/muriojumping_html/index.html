@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta content="text/html; charset=utf-8" http-equiv=
+  "content-type">
+  <title></title>
+  <link rel="stylesheet" href="problem.css">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: { 
+    ignoreClass: ".*",
+    inlineMath: [['$','$'], ['\\(','\\)']]
+        },
+  MMLorHTML: {
+    prefer: {Firefox: "HTML"}
+    }
+  });
+  </script>
+  <script type="text/javascript" src=
+  "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+</head>
+<body>
+  <div class="problembody">
+    <div class="problemheader">
+      <h1>Murio Jumping!</h1>
+      <h3>Problem ID: muriojumping</h3>
+    </div>
+    <p>Nindento is making a new 2D Murio game!, but they’re very
+    new at game design and need your help to test out their levels,
+    to see if they can be beaten or not.<br>
+    The game has a new mechanic that every level, Murio can jump
+    <span class="tex2jax_process">$H$</span> and fall <span class=
+    "tex2jax_process">$F$</span> a different height at every level,
+    some levels he wont even be able to jump or fall without
+    losing.<br>
+    But as a programmer you know better than to just test it
+    manually, you thought to yourself... why not just test it with
+    a script?<br>
+    A level is made up of <span class="tex2jax_process">$R$</span>
+    times <span class="tex2jax_process">$C$</span> tiles (a square
+    level of tiles) and only contains solid blocks and air.<br>
+    You extracted the data of the levels and flipped it
+    <span class="tex2jax_process">$90\circ $</span> to make it more
+    readable for your sophisticated AI!</p>
+    <h2>Input</h2>
+    <p>The input is 1 level of Murio Jumping, it starts with 4
+    integers, <span class="tex2jax_process">$1 \leq R, C \leq
+    10.000 $</span> to define the row and columns of the level, and
+    <span class="tex2jax_process">$1 \leq H,F \leq 10$</span> to
+    define jump height <span class="tex2jax_process">$H$</span> and
+    the maximum fall height <span class=
+    "tex2jax_process">$F$</span>.<br>
+    Next follows <span class="tex2jax_process">$R$</span> lines
+    with <span class="tex2jax_process">$C$</span> symbols in every
+    line. an "x" defines a solid block that Murio needs to
+    traverse, and "." defines empty space.</p>
+    <h2>Output</h2>
+    <p>If Murio can make it through the level without failing jumps
+    or falls, you must output "Wahoo!", otherwise output the
+    <span class="tex2jax_process">$R$</span> that Murio fails
+    on.</p>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 1</th>
+        <th>Sample Output 1</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>5 5 2 1
+.....
+x....
+xxx..
+xx...
+x....</pre>
+        </td>
+        <td>
+          <pre>Wahoo!</pre>
+        </td>
+      </tr>
+    </table>
+    <table class="sample" summary="sample data">
+      <tr>
+        <th>Sample Input 2</th>
+        <th>Sample Output 2</th>
+      </tr>
+      <tr>
+        <td>
+          <pre>3 5 1 1
+x....
+xxx..
+xx...</pre>
+        </td>
+        <td>
+          <pre>2</pre>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

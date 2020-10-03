@@ -1,0 +1,16 @@
+\problemname{Murio Jumping!}
+
+Nindento is making a new 2D Murio game!, but they're very new at game design and need your help to test out their levels, to see if they can be beaten or not. \\
+The game has a new mechanic that every level, Murio can jump $H$  and fall $F$ a different height at every level, some levels he wont even be able to jump or fall without losing. \\
+But as a programmer you know better than to just test it manually, you thought to yourself... why not just test it with a script? \\
+A level is made up of $R$ times $C$ tiles (a square level of tiles) and only contains solid blocks and air. \\
+You extracted the data of the levels and flipped it $90\circ$ to make it more readable for your sophisticated AI!
+
+\section*{Input}
+
+The input is 1 level of Murio Jumping, it starts with 4 integers, $1 \leq R, C \leq 10.000 $ to define the row and columns of the level, and $1 \leq H,F \leq 10$ to define jump height $H$ and the maximum fall height $F$. \\
+Next follows $R$ lines with $C$ symbols in every line. an "x" defines a solid block that Murio needs to traverse, and "." defines empty space.\\
+
+\section*{Output}
+
+If Murio can make it through the level without failing jumps or falls, you must output "Wahoo!", otherwise output the $R$ that Murio fails on.
